@@ -38,7 +38,7 @@ body {
   box-sizing: border-box; }
 
 img {
-  max-width: 100%; }
+  width: 100%; }
 
 a:focus,
 input:focus,
@@ -1191,9 +1191,13 @@ p {
 /*===========================
     09.BLOG css 
 ===========================*/
-.single_blog .blog_image img {
-  width: 100%; }
+.blog_image img {
+  width: 100%; 
+}
 
+.blog_image_pre img {
+  width: 200px; 
+}
 .single_blog .blog_content {
   margin-top: 25px; }
   .single_blog .blog_content .blog_title a {
@@ -1214,8 +1218,8 @@ p {
     margin-top: 15px; }
   .single_blog .blog_content .more {
     font-size: 16px;
-    font-weight: 500;
-    color: #5A5872;
+    font-weight: 600;
+    color: #666670;
     margin-top: 15px;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
