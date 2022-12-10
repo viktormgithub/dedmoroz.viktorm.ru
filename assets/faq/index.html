@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+</head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <p id="welcomemessage">Здравствуйте! Дедушка Мороз к вашим услугам)</p>
+        <button onclick="copyToClipboard('#welcomemessage')">Здравствуйте</button>
+
+        <p id="algo">Напишите, пожалуйста: 1) ДАТУ  2) ПРИМЕРНОЕ ВРЕМЯ *от/до 3-х часовое окно  3) МЕТРО (адрес) </p>
+        <button onclick="copyToClipboard('#algo')">Алгоритм</button>
+
+
+        <p id="price1">До 31 декабря 1.500 руб.</p>
+        <button onclick="copyToClipboard('#price1')">Цены до нг</button>
+
+        <p id="price2">31 декабря цена от 2 тыс. в зависимости от времени: ДЕНЬ 2 тыс.руб /// ВЕЧЕР  3 тыс.руб /// НОЧЬ 4 тыс.руб. </p>
+        <button onclick="copyToClipboard('#price2')">Цены 31 дек</button>
+
+
+        <p id="geo">Подскажите, пожалуйста, район. Какое метро и как далеко?</p>
+        <button onclick="copyToClipboard('#geo')">Метро ?</button>
+
+        <p id="succes">Благодарю! Принял вашу заявку, занес в журнал. За день до визита еще раз спишемся.</p>
+        <button onclick="copyToClipboard('#succes')">Заявка принята</button>
+
+        <p id="geo">Всего доброго! До связи, до встречи!</p>
+        <button onclick="copyToClipboard('#geo')">До встречи</button>
+
+
+
+            <script type="text/javascript">
+                        function copyToClipboard(element) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+                }
+            </script>
+        
+    </body>
+</html>
